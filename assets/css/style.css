@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(216, 225, 222);
+}
+
+header.excursions__header{
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+div.order__total-price{
+    font-weight: bold;
+    padding-bottom: 6px;
+    text-decoration-line: underline;
+}
+
+h2.excursions__title{
+    padding-bottom: 4px;
+}
+
 ul {
     list-style: none;
 }
@@ -25,7 +44,8 @@ ul {
 }
 
 .excursions__item {
-    border: 1px solid #bbb;
+    border: 2px solid #bbb;
+    background-color: rgb(245, 211, 216);
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
@@ -33,13 +53,81 @@ ul {
 }
 
 .panel__form {
-    background-color: #f4f4f4;
-    padding: 20px;
-    width: 30%;
+    padding: 10px;
+    width: 35%;
 }
 
 .uploader, .order {
+    background-color: rgb(245, 211, 216);
     border-bottom: 1px solid #bbb;
+    border-radius: 5px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #bbb;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-content: center;
+    
+}
+
+.order__total-price{
+    display: flex;
+}
+
+.order__total-price-value{
+    margin-left: 5px;
+}
+p{
+    margin-left: 10px;
+}
+
+input.order__field-input{
+    width:100%;
+    padding: 2px;
+    margin-bottom: 4px;
+}
+input.uploader__input{
+    padding-top: 3px;
+}
+input.excursions__field-input{
+    width: 100%;
+    height: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 3px;
+}
+input.excursions__field-input--submit{
+    background-color: rgb(209, 242, 242);
+    padding-left: 4px;
+    height: 30px;
+    border-radius: 4px;
+}
+.excursions__item--prototype,.summary__item--prototype{
+    display: none;
+}
+
+.summary__item{
+    background-color:rgb(245, 211, 216);
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+.summary__prices{
+    padding-top: 3px;
+}
+
+.summary__btn-remove{
+    text-decoration: none;
+    color: rgb(95, 22, 22);
+    margin-left: 30px;
+}
+
+.summary__title{
+    display: flex;
+}
+
+.summary__total-price{
+    margin-left: 30px;
 }
